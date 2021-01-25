@@ -1,0 +1,18 @@
+# ==============
+# Travis CI
+# tool for test and deploy
+
+# 1. connect travis ci account to github
+# 2. set .travis.yml
+# 3. push to github
+
+
+# ==============
+# Coveralls
+# derive coverage data from Travis CI and arrange
+
+
+# ==============
+# README AND badges
+# ref: shields.io
+

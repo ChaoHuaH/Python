@@ -1,0 +1,14 @@
+# ===============
+# nose
+# easy tool for unittest
+nosetests
+
+# ===============
+# coverage
+# extension of nose
+# create a file .coverage decribe coverage
+nosetests --with-coverage --cover-erase --cover-package=project_name
+nosetests --with-coverage --cover-erase --cover-package=project_name --cover-html # w/ html coverage test file
+
+
+

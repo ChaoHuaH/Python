@@ -1,0 +1,96 @@
+# ===================================
+# sphinx
+# Documentation generator w/ restructure format
+
+## Quickstart
+# Go to the project directory
+mkdir docs
+cd docs
+sphinx-quickstart
+
+## Make docs
+make html # create html pages in dir: html
+
+## Publish the docs to readthedocs
+# 1. add file .placehold to both the docs/source/_static and the docs/source/_templates
+#    By doing so, /_statics and /_templates can be upload to github
+#    Or there would be an error when publishing docs to readthedocs
+# 2. commit /docs to git
+# 3. push to github
+# 4. connect github and readthedocs
+
+## reStucturedText
+# ref: https://rest-sphinx-memo.readthedocs.io/en/latest/
+# format: xxx.rst
+
+# header
+
+#########
+Install
+#########
+
+This is an install guide.
+
+Section1
+=======
+
+This is section 1
+
+Subsection1.1
+-------------
+
+Subsubsection1.1
+^^^^^^^^^^^^^^^^
+
+Section2
+========
+
+this is section 2
+
+subsection2.1
+---------------
+
+# block
+# list block
+
+- First item 
+- Second item
+- Third item
+
+# code block
+
+..code:: python
+    print "hello world"
+    
+    def test():
+        pass
+
+
+
+# table
+
+== == ==
+aA bB eE
+cC dD eF
+== == ==
+
+
+# link
+
+A link to `Sphinx Home`_ incitation style.
+this is section 2 [1]_.
+
+.._ Sphinx Home: http://sphinx.pocoo.org
+.. [1] this is reference link
+
+
+
+# ===================================
+# mkdocs
+# Documentation generator w/ markdown
+
+## Start
+mkdocs new my-project
+# .yml : configuration file
+
+
